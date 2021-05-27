@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/member", (function(a){return {data:[{members:a}],fetch:{},mutations:a}}(void 0)));

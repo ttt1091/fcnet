@@ -36,6 +36,11 @@
       >
         No other internal dependency
       </card>
+      <div>
+        https://live.fc2.com/publicApiList/<br>
+        https://live.fc2.com/adult/contents/allchannellist.php
+
+      </div>
     </div>
   </section>
 </template>

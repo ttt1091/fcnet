@@ -33,6 +33,16 @@ export default {
           title: 'Inspire',
           icon: 'lightbulb',
           to: { name: 'inspire' }
+        },
+        {
+          title: 'AllChannel',
+          icon: 'lightbulb',
+          to: { name: 'channellist' }
+        },
+        {
+          title: 'Member',
+          icon: 'lightbulb',
+          to: { name: 'member' }
         }
       ]
     }
