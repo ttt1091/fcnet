@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/inspire", {data:[{_img:{}}],fetch:{},mutations:[]});
