@@ -1,44 +1,13 @@
 <template>
   <section class="section">
     <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github"
-      >
-        Open source on <a href="https://github.com/buefy/buefy">
-          GitHub
-        </a>
-      </card>
-
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">
-          Every
-        </b> component is responsive
-      </card>
-
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">
-          Vue.js
-        </a> and <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
       <div>
+        https://qiita.com/Ancient_Scapes/items/fe18bae043e4d35f1e39<br>
         https://live.fc2.com/publicApiList/<br>
-        https://live.fc2.com/adult/contents/allchannellist.php
+        https://live.fc2.com/adult/contents/allchannellist.php<br>
+        <ul>
+          <li>画層最適化モジュール：https://zenn.dev/kote2/articles/3fe4c7a8ad1797</li>
+        </ul>
 
       </div>
     </div>

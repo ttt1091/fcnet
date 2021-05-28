@@ -30,20 +30,10 @@ export default {
           to: { name: 'index' }
         },
         {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' }
-        },
-        {
           title: 'AllChannel',
           icon: 'lightbulb',
           to: { name: 'channellist' }
         },
-        {
-          title: 'Member',
-          icon: 'lightbulb',
-          to: { name: 'member' }
-        }
       ]
     }
   }
@@ -51,5 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+div{
+  width: auto;
+}
 </style>
