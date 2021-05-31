@@ -1,0 +1,41 @@
+*{ box-sizing: border-box; }
+html,body{ margin: 0;padding: 0; }
+.is-mobile-menu{
+  background-color: #FFF;
+  border-right: solid 1px #ccc;
+  display: none;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: -250px;
+  z-index: 1072;
+  animation: anim 1s forwards;
+}
+.is-view{
+  display: block;
+}
+.is-mobile-menu-open{
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  z-index: 8;
+}
+
+@keyframes anim {
+  0% {
+  transform: translateX(0px);
+  }
+
+  100% {
+  transform: translateX(250px);
+  }
+}
+
+
+
+.memo {
+  word-break: break-all;
+}
+.list-thumb{
+  width: 50px;
+}

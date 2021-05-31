@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{'is-mobile-menu-open': $store.state.isMenuActive}">
     <nav
       class="navbar header has-shadow is-success"
       role="navigation"
@@ -17,7 +17,7 @@
           >
         </a>
 
-        <div class="navbar-burger">
+        <div class="navbar-burger" @click="$store.commit('toggleMenu')" :class="{'is-active': $store.state.isMenuActive}">
           <span />
           <span />
           <span />
@@ -25,11 +25,18 @@
       </div>
     </nav>
 
-    <section class="main-content columns">
+    <section class="main-content">
+
+    <div class="is-mobile-menu" :class="{'is-view': $store.state.isMenuActive}">
       <Mainmenu />
-      <div class="container column is-10">
-        <nuxt />
-      </div>
+    </div>
+
+    <div class="is-hidden-mobile is-hidden-tablet-only">
+      <Mainmenu />
+    </div>
+    <div class="container is-10">
+      <nuxt />
+    </div>
     </section>
   </div>
 </template>
@@ -39,6 +46,10 @@ import Mainmenu from '~/components/Mainmenu'
 export default {
   components: {
     Mainmenu
-  },
+  }
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

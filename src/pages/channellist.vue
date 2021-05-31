@@ -17,13 +17,27 @@
     <div v-for="(post, index) in posts" :key="index">
     	<div class="grs-card" v-if="post.sex === 'w'">
 		    <div class="grs-hero">
-			    <img :src="post.image" quality="70">
+          <!--
+          <nuxt-img
+            :src="post.image"
+            quality="70"
+            :alt="post.name"
+          />
+          -->
 		    </div>
 		    <div class="grs-card-head">
 			    <h2>{{ post.name }}</h2>
 		    </div>
 		    <div class="grs-card-body">
 			    <div>配信タイトル:{{ post.title }}</div>
+          <div>
+            <span v-if="post.type == '1'">LIVECHAT</span>
+            <span v-else-if="post.type == '2'">2SHOT</span>
+            <span v-else>OPEN</span>
+          </div>
+          <div>
+            {{ post.lang }}
+          </div>
 		    </div>
         <div class="grs-card-foot">
           <div><a :href="'https://live.fc2.com/'+post.id+'/'" target="_blank">ライブ配信へ</a></div>
@@ -35,16 +49,6 @@
       <li v-for="(post, index) in posts" :key="index">
         <div v-if="post.sex === 'w'">
         <img :src="post.image" alt="" class="list-thumb">
-        <a :href="post.id" target="_blank" rel="noopener noreferrer">{{ post.title }}</a><br>
-        名前：{{ post.name }}<br>
-        視聴数：{{ post.count }}<br>
-        性別：{{ post.sex }}<br>
-        放送開始日時：{{ $dateTimeToJaDate(post.start_time) }}<br>
-        チャンネルタイプ：{{ post.type }}<br>
-        制限：{{ post.login }}<br>
-        価格：{{ post.pay }}<br>
-        </div>
-        <div v-else>
         <a :href="post.id" target="_blank" rel="noopener noreferrer">{{ post.title }}</a><br>
         名前：{{ post.name }}<br>
         視聴数：{{ post.count }}<br>
@@ -68,30 +72,12 @@
         posts: response.channel
       };
     },
+    fetch ({store}) {
+      store.commit('resetMenu')
+    }
   }
 </script>
 
 <style lang="scss" scoped>
-.list-thumb{
-  width: 50px;
-}
-.grs-card{
-	width: 300px;
-	margin: 8px auto;
-	background: #FFF;
-	border: solid 1px #ccc;
-	border-radius: .25rem;
-}
-.grs-hero{
-  img{
-	  width: 100%;
-    height: 150px;
-	  vertical-align: bottom;
-	  border-radius: .25rem .25rem 0 0;
-    object-fit: cover;
-  }
-}
-.grs-card-head{
-	h1,h2,h3,h4,h5,h6{ font-size: 1rem; }
-}
+
 </style>

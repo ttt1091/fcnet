@@ -1,7 +1,7 @@
 <template>
-      <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">
-          General
+      <aside class="is-2 section">
+        <p class="menu-label">
+          MENU
         </p>
         <ul class="menu-list">
           <li
