@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/member", {data:[{members:void 0,_img:{}}],fetch:{},mutations:[]});

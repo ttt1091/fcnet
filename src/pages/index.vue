@@ -13,6 +13,9 @@
         <li>
           画層最適化モジュール：https://zenn.dev/kote2/articles/3fe4c7a8ad1797
         </li>
+        <li>
+          超重要:https://www.virment.com/how-to-create-computed-v-for/
+        </li>
       </ul>
     </section>
   </main>
@@ -33,5 +36,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

@@ -61,7 +61,10 @@ export default {
   },
 
   image: {
-    domains: ['https://live-storage.fc2.com/']
+    domains: [
+      'https://live-storage.fc2.com/',
+      'https://static-sv.fc2.com/'
+    ]
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -70,6 +73,9 @@ export default {
 
   generate: {
     dir: 'public',
+    exclude: [
+      '/admin'
+    ]
   },
 
   
