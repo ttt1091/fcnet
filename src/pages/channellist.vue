@@ -42,7 +42,7 @@
         <div>
           <div>
             <NuxtLink
-              to="/girls/"
+              :to="'/girls/'+post.id"
             >
               配信者情報
             </NuxtLink>
