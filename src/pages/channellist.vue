@@ -74,8 +74,8 @@
     computed: {
       sortedItemsByCount(){
         return this.posts.sort((a, b) => {
-          return (a.count < b.count) ? 1 : (a.count > b.count) ? -1 : 0;
-        });;
+          return (a.count < b.count) ? 1 : (a.count > b.count) ? -1 : 0
+        })
       },
     },
     fetch ({store}) {

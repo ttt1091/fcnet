@@ -31,7 +31,7 @@
       <Mainmenu />
     </div>
 
-    <div class="is-hidden-mobile is-hidden-tablet-only">
+    <div class="is-hidden-mobile is-hidden-tablet-only is-desktop-menu">
       <Mainmenu />
     </div>
     <div class="container is-10">

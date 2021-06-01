@@ -31,7 +31,7 @@ export default {
         },
         {
           title: 'AllChannel',
-          icon: 'lightbulb',
+          icon: 'video-vintage',
           to: { name: 'channellist' }
         },
       ]

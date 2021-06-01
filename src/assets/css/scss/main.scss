@@ -1,3 +1,10 @@
+$pc: 1024px;
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
 *{ box-sizing: border-box; }
 html,body{ margin: 0;padding: 0; }
 .is-mobile-menu{
@@ -9,7 +16,7 @@ html,body{ margin: 0;padding: 0; }
   position: fixed;
   left: -250px;
   z-index: 1072;
-  animation: anim 1s forwards;
+  animation: anim .5s forwards;
 }
 .is-view{
   display: block;
@@ -35,7 +42,17 @@ html,body{ margin: 0;padding: 0; }
   }
 }
 
+.main-content{
+  @include pc {
+    display: flex;
+  }
+}
 
+.is-desktop-menu{
+  min-width: 200px;
+  height: calc(100vh - 52px);
+  border-right: solid 1px #ddd;
+}
 
 .memo {
   word-break: break-all;
