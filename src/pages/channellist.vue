@@ -7,9 +7,12 @@
       </div>
     </div>
 
-    <div style="display: flex;flex-wrap: wrap;padding: 8px;">
-      <div v-for="(post, index) in sortedItemsByCount" :key="index">
-    	<div class="grs-card" v-if="post.sex === 'w' & post.lang == 'ja'">
+    <div>
+      <button class="button" @click="changeOrder">↑昇降変更↓</button>
+    </div>
+
+    <div style="display: flex;flex-wrap: wrap;">
+    	<div v-for="(post, index) in sortedAndFiltert" :key="index" class="grs-card">
 		    <div class="grs-hero">
             <a class="grs-hero-link" :href="'https://live.fc2.com/'+post.id+'/'" target="_blank">
           <nuxt-img
@@ -28,12 +31,12 @@
             <span class="grs-batch grs-batch-small grs-light-red">{{ post.count }}人視聴中!!</span>
           </div>
           <div>
-            <span v-if="post.pay === 0" class="grs-batch">無料</span>
-            <span v-else class="grs-batch">有料</span>
+            <span v-if="post.pay === 0" class="grs-batch grs-batch-small">無料</span>
+            <span v-else class="grs-batch grs-batch-small">有料</span>
 
-            <span v-if="post.type == '1'" class="grs-batch">LIVECHAT</span>
-            <span v-else-if="post.type == '2'" class="grs-batch">2SHOT</span>
-            <span v-else class="grs-batch">OPEN</span>
+            <span v-if="post.type == '1'" class="grs-batch grs-batch-small">LIVECHAT</span>
+            <span v-else-if="post.type == '2'" class="grs-batch grs-batch-small">2SHOT</span>
+            <span v-else class="grs-batch grs-batch-small">OPEN</span>
           </div>
 		    </div>
         <div>
@@ -52,7 +55,6 @@
           <div><a :href="'https://live.fc2.com/'+post.id+'/'" target="_blank">ライブ配信へ</a></div>
         </div>
 	    </div>
-      </div>
     </div>
   </main>
 </template>
@@ -68,7 +70,9 @@
     },
     data(){
       return{
-        posts: this.posts
+        posts: this.posts,
+        sortOrder: 1,
+        sortRule: 'sortedAndFiltert'
       }
     },
     computed: {
@@ -76,6 +80,18 @@
         return this.posts.sort((a, b) => {
           return (a.count < b.count) ? 1 : (a.count > b.count) ? -1 : 0
         })
+      },
+      sortedAndFiltert(){
+        return this.posts.filter((filt) => filt.sex === "w" && filt.lang === "ja")
+        .slice()
+        .sort((a, b) => {
+          return (a.count < b.count) ? this.sortOrder : (a.count > b.count) ? -this.sortOrder : 0
+        })
+      },
+    },
+    methods: {
+      changeOrder(){
+        this.sortOrder = this.sortOrder > 0 ? -1 : 1;
       },
     },
     fetch ({store}) {
