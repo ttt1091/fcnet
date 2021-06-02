@@ -34,6 +34,11 @@ export default {
           icon: 'video-vintage',
           to: { name: 'channellist' }
         },
+        {
+          title: 'Channel2',
+          icon: 'video-vintage',
+          to: { name: 'channel' }
+        },
       ]
     }
   }

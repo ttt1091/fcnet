@@ -15,7 +15,10 @@
     	<div v-for="(post, index) in sortedAndFiltert" :key="index" class="grs-card">
 		    <div class="grs-hero">
             <a class="grs-hero-link" :href="'https://live.fc2.com/'+post.id+'/'" target="_blank">
-              <img :src="post.image" :alt="post.name">
+          <img
+            :src="post.image"
+            :alt="post.name"
+          />
             </a>
 		    </div>
 		    <div class="grs-card-head">
@@ -40,13 +43,6 @@
         </div>
         <div>
           <div>
-            <!-- 
-            <NuxtLink
-              :to="'/girls/'+post.id"
-            >
-              配信者情報
-            </NuxtLink>
-            -->
           </div>
         </div>
         <div class="grs-card-foot">

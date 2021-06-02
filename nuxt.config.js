@@ -35,7 +35,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -58,13 +57,6 @@ export default {
     manifest: {
       lang: 'ja'
     }
-  },
-
-  image: {
-    domains: [
-      'https://live-storage.fc2.com/',
-      'https://static-sv.fc2.com/'
-    ]
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

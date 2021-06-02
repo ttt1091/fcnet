@@ -16,6 +16,9 @@
         <li>
           超重要:https://www.virment.com/how-to-create-computed-v-for/
         </li>
+        <li>
+          https://dev.to/tillsanders/deploy-nuxt-js-on-digitalocean-app-platform-in-5-minutes-or-less-2dij
+        </li>
       </ul>
     </section>
   </main>
