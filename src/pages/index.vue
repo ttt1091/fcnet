@@ -11,6 +11,15 @@
       https://live.fc2.com/adult/contents/allchannellist.php<br />
       <ul>
         <li>
+          https://qiita.com/nyatto/items/94c3f7cac14e8e8ef50f
+        </li>
+        <li>
+          nuxt.config.js -> target is change[server], Insert ssr: true,
+        </li>
+        <li>
+          layouts > default.bue -> canonical setting
+        </li>
+        <li>
           画層最適化モジュール：https://zenn.dev/kote2/articles/3fe4c7a8ad1797
         </li>
         <li>

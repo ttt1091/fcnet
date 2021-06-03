@@ -1,6 +1,8 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  // target: 'static',
+  target: 'server',
+  ssr: true,
   srcDir: 'src/',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -10,6 +12,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' },
       { hid: "robots", name: "robots", content: "noindex" }
     ],
     link: [
@@ -26,6 +29,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/datechange.js', ssr: true },
+    { src: "~/plugins/lazyload.js" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

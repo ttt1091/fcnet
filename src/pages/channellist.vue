@@ -15,7 +15,7 @@
     	<div v-for="(post, index) in sortedAndFiltert" :key="index" class="grs-card">
 		    <div class="grs-hero">
             <a class="grs-hero-link" :href="'https://live.fc2.com/'+post.id+'/'" target="_blank">
-              <img :src="post.image" :alt="post.name">
+              <img v-lazy="post.image" :alt="post.name">
             </a>
 		    </div>
 		    <div class="grs-card-head">

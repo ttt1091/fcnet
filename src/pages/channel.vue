@@ -16,7 +16,7 @@
 		    <div class="grs-hero">
             <a class="grs-hero-link" :href="'https://live.fc2.com/'+post.id+'/'" target="_blank">
           <img
-            :src="post.image"
+            v-lazy="post.image"
             :alt="post.name"
           />
             </a>
