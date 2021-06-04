@@ -58,7 +58,7 @@
     async asyncData({ $axios, error }) {
       try{
         const url = "https://live.fc2.com/adult/contents/allchannellist.php"
-        const response = await $axios.$get(url)
+        const response = await $axios.$get("/api/")
         return {
           posts: response.channel,
         }

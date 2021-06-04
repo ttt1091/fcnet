@@ -44,6 +44,11 @@ export default {
           icon: 'video-vintage',
           to: { name: 'axios' }
         },
+        {
+          title: 'channel3',
+          icon: 'video-vintage',
+          to: { name: 'channel2' }
+        },
       ]
     }
   }

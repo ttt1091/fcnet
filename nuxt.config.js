@@ -30,6 +30,8 @@ export default {
   plugins: [
     { src: '~/plugins/datechange.js', ssr: true },
     { src: "~/plugins/lazyload.js" },
+    //{ src: '~/plugins/axios', ssr: true },
+    //{ src: '~/plugins/api', ssr: true }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,7 +56,14 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    proxy: true,
+    retry: { retries: 3 }
+  },
+  proxy: {
+    '/api/': { target: 'https://live.fc2.com/adult/contents/allchannellist.php', pathRewrite: {'^/api/': ''} }
+    
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
