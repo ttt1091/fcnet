@@ -61,8 +61,9 @@ export default {
     retry: { retries: 3 }
   },
   proxy: {
-    '/api/': { target: 'https://live.fc2.com/adult/contents/allchannellist.php', pathRewrite: {'^/api/': ''} }
-    
+    '/api/': { target: 'https://live.fc2.com/adult/contents/allchannellist.php', pathRewrite: {'^/api/': ''} },
+    '/girl/': { target: 'https://live.fc2.com/api/memberApi.php', pathRewrite: {'^/girl/': ''} },
+
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

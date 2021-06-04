@@ -43,6 +43,11 @@
         </div>
         <div>
           <div>
+            <NuxtLink
+              :to="'/girls/'+post.id"
+            >
+              配信者情報
+            </NuxtLink>
           </div>
         </div>
         <div class="grs-card-foot">
@@ -57,7 +62,6 @@
   export default {
     async asyncData({ $axios, error }) {
       try{
-        const url = "https://live.fc2.com/adult/contents/allchannellist.php"
         const response = await $axios.$get("/api/")
         return {
           posts: response.channel,

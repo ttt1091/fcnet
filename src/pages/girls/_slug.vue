@@ -16,9 +16,9 @@
       return { slug }
     },
     async asyncData({ $axios, params }) {
-      const url = 'https://live.fc2.com/api/memberApi.php?streamid='+params.slug+'&profile=1'
+      const url = '/girl/?streamid='+params.slug+'&profile=1'
       const response = await $axios.$get(url)
-      const channelUrl = 'https://live.fc2.com/api/memberApi.php?streamid='+params.slug+'&channel=1'
+      const channelUrl = '/girl/?streamid='+params.slug+'&channel=1'
       const channelResponse = await $axios.$get(channelUrl)
       return {
         name: response.data.profile_data.name,
