@@ -29,9 +29,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/datechange.js', ssr: true },
-    { src: "~/plugins/lazyload.js" },
-    //{ src: '~/plugins/axios', ssr: true },
-    //{ src: '~/plugins/api', ssr: true }
+    { src: "~/plugins/lazyload.js" }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -53,6 +51,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/dayjs',
     '@nuxtjs/proxy',
+    '@nuxt/content',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -64,6 +63,10 @@ export default {
     '/api/': { target: 'https://live.fc2.com/adult/contents/allchannellist.php', pathRewrite: {'^/api/': ''} },
     '/girl/': { target: 'https://live.fc2.com/api/memberApi.php', pathRewrite: {'^/girl/': ''} },
 
+  },
+
+  content: {
+    // Options
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
