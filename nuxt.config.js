@@ -52,6 +52,7 @@ export default {
     '@nuxtjs/dayjs',
     '@nuxtjs/proxy',
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -85,6 +86,15 @@ export default {
     exclude: [
       '/admin'
     ]
+  },
+
+  sitemap: {
+    // options
+    hostname: 'http://localhost:3000',
+    gzip: true,
+    exclude: [
+      '/admin'
+    ],
   },
 
   

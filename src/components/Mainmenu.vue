@@ -49,6 +49,11 @@ export default {
           icon: 'video-vintage',
           to: { name: 'channel2' }
         },
+        {
+          title: '投稿一覧',
+          icon: 'star',
+          to: { name: 'articles' }
+        },
       ]
     }
   }
