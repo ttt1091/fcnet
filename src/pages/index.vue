@@ -23,6 +23,16 @@
       https://live.fc2.com/adult/contents/allchannellist.php<br />
       <ul>
         <li>
+          おすすめ配信一覧
+          おすすめ配信通知(LINE通知)
+          リアルタイム配信一覧
+          配信者twitter
+          配信者ブログ
+          他ライブチャットとの比較
+          失敗しない2ショットの楽しみ方
+          Twitterを活用しよう
+        </li>
+        <li>
           https://uncle-javascript.com/weird-nuxt-3-axios-data-fetch
         </li>
         <li>
