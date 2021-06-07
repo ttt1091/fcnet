@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'is-mobile-menu-open': $store.state.isMenuActive}">
+  <div>
     <nav
       class="navbar header has-shadow is-success"
       role="navigation"
@@ -27,8 +27,10 @@
 
     <section class="main-content">
 
-    <div class="is-mobile-menu" :class="{'is-view': $store.state.isMenuActive}">
-      <Mainmenu />
+    <div style="top: 52px;" :class="{'is-mobile-menu-open': $store.state.isMenuActive}" @click="$store.commit('toggleMenu')">
+      <div class="is-mobile-menu" :class="{'is-view': $store.state.isMenuActive}">
+        <Mainmenu />
+      </div>
     </div>
 
     <div class="is-hidden-mobile is-hidden-tablet-only is-desktop-menu">
