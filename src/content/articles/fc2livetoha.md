@@ -17,6 +17,7 @@ FC2LIVE(FC2ライブ)の特徴は他のライブチャットと違い無料で�
 ちなみに詳細は後述しますが、FC2LIVEの女の子の配信には複数種類の種別があります。
 
 <div class="nowrap-table">
+
 |    |  会員登録無し  |  会員登録済み(無料のみ)  |  会員登録済み(PT購入済み)  |  プレミアム会員  |
 | ---- | ---- | ---- |---- |---- |
 |  無料番組の視聴  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
@@ -27,6 +28,7 @@ FC2LIVE(FC2ライブ)の特徴は他のライブチャットと違い無料で�
 |  お気に入り番組登録/配信通知	  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
 |  プレミアムスタンプ  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |
 |  タイムシフト視聴  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |
+
 </div>
 
 
