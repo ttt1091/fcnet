@@ -7,3 +7,11 @@ Vue.prototype.$dateTimeToJaDate = (dateTimeString) => {
  }
  return ''
 }
+
+Vue.prototype.$dateToJaDate = (dateString) => {
+  if (dateString) {
+   const date = new Date(dateString)
+   return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日${date.getHours()}`
+  }
+  return ''
+ }

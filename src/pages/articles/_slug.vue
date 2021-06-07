@@ -1,7 +1,13 @@
 <template>
-  <article class="container mx-auto my-8 px-20 md:px-0">
-    <h1 class="text-center text-3xl font-bold my-8">{{ article.title || '' }}</h1>
-    <div class="content bg-white rounded">
+  <article class="article-view">
+    <div class="article-head">
+      <h1 class="ttl">{{ article.title || '' }}</h1>
+      <div class="grs-box-right">
+        <div v-if="article.created_at === article.updated_at">作成日：<span>{{ $dateToJaDate(article.created_at) }}</span></div>
+        <div v-else>更新日：<span>{{ $dateToJaDate(article.updated_at) }}</span></div>
+      </div>
+    </div>
+    <div class="article-body">
       <nuxt-content :document="article" />
     </div>
   </article>
@@ -27,12 +33,15 @@ export default {
 
 <style lang="scss" scoped>
 h1{ font-size: 1.1rem; }
-th{
-  font-size: .8rem;
-}
+th{ font-size: .8rem; }
 tr{
   td:first-child{
     font-size: .8rem;
   }
+}
+
+.grs-box-right{ text-align: right; }
+.article-body{
+  margin: 8px;
 }
 </style>
