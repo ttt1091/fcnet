@@ -27,7 +27,7 @@
 
     <section class="main-content">
 
-    <div style="top: 52px;" :class="{'is-mobile-menu-open': $store.state.isMenuActive}" @click="$store.commit('toggleMenu')">
+    <div style="top: 52px;" @click="$store.commit('toggleMenu')" :class="{'is-mobile-menu-open': $store.state.isMenuActive}">
       <div class="is-mobile-menu" :class="{'is-view': $store.state.isMenuActive}">
         <Mainmenu />
       </div>

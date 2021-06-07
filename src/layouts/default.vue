@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'is-mobile-menu-open': $store.state.isMenuActive}">
+  <div>
     <nav
       class="navbar header has-shadow is-success"
       role="navigation"
@@ -27,8 +27,11 @@
 
     <section class="main-content">
 
-    <div class="is-mobile-menu" :class="{'is-view': $store.state.isMenuActive}">
-      <Mainmenu />
+    <div style="top: 52px;display: flex;">
+      <div class="is-mobile-menu" :class="{'is-view': $store.state.isMenuActive}">
+        <Mainmenu />
+      </div>
+      <div @click="$store.commit('toggleMenu')"  :class="{'is-mobile-menu-opened': $store.state.isMenuActive}">close</div>
     </div>
 
     <div class="is-hidden-mobile is-hidden-tablet-only is-desktop-menu">
@@ -61,4 +64,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.is-mobile-menu-opened{
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  flex-grow: 2;
+}
 </style>

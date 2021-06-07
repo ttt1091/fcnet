@@ -70,6 +70,27 @@ main{
 }
 
 
+.grs-nowrap-table{
+  overflow: hidden;
+  width: 100%;
+  .grs-nowrap-table-slide{
+    overflow: auto;
+    width: auto;
+    table{
+      margin: 32px auto;
+      width: 100%;
+      th, td{
+        white-space: nowrap;
+        border: solid 1px #ccc;
+        padding: 8px 4px;
+      }
+      td{ text-align: center; }
+      td:first-child{ text-align: left; }
+    }
+  }
+}
+
+
 /********************
  Original Setting
 ********************/

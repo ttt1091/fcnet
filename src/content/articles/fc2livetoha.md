@@ -16,24 +16,37 @@ FC2LIVE(FC2ライブ)の特徴は他のライブチャットと違い無料で�
 基本的には無料で、お気に入りの女の子がいれば有料配信も見てみるというスタンスで楽しむのが1番良いと思います♪
 ちなみに詳細は後述しますが、FC2LIVEの女の子の配信には複数種類の種別があります。
 
-<div class="nowrap-table">
+<div class="grs-nowrap-table">
+<div class="grs-nowrap-table-slide">
 
-|    |  会員登録無し  |  会員登録済み(無料のみ)  |  会員登録済み(PT購入済み)  |  プレミアム会員  |
+|    |  会員登録無し  |  会員登録済み<br>(無料のみ)  |  会員登録済み<br>(PT購入済み)  |  プレミアム会員  |
 | ---- | ---- | ---- |---- |---- |
-|  無料番組の視聴  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
+|  無料配信の視聴  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
 |  コメント  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
-|  ログイン限定番組の視聴  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
-|  ポイント所持ユーザー限定番組の視聴  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
-|  番組配信  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
-|  お気に入り番組登録/配信通知	  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
+|  ログイン限定配信の視聴  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
+|  PT所持限定配信の視聴  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
+|  チャット配信  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
+|  お気に入り配信登録/配信通知	  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |  <b-icon icon="check-bold" />  |
 |  プレミアムスタンプ  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |
 |  タイムシフト視聴  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="minus-circle" />  |  <b-icon icon="check-bold" />  |
 
 </div>
+</div>
+
+### 無料でも楽しめる？
+
+ログイン限定やポイント所持限定配信ではない限り、会員登録をしなくても見ることは出来ますが、身バレを防ぎたい女の子はログイン限定配信にしていることもしばしば…
+そういう子に限って可愛い子が多いので私個人としては無料の会員登録をすることを強くおすすめします♪
+
+有料配信になったら女の子の全てが見えると言っても過言ではありませんが、無料でも十分に楽しめるのがFC2LIVEの大きな特徴です。
+無料で可愛い女の子を吟味し、お気に入り登録をして見たい子が現れたらポイントチャージをして有料配信に参加するというのがスタンダードな流れだと思います。
+
+ちなみに私もそうですが女の子の下着姿が大好きという方は、有料配信よりもむしろ無料配信の女の子の焦らしプレイの間の方が興奮するかもしれません。
+普通の風俗店で出会おうと思ったら困難なレベルの可愛い子、パッと見エッチなことなんて無関係そうな純粋無垢な子が徐々にスケベになっていく姿…これはもうグッと来るものがありますね♪
+身バレの可能性が低く、実際に会うことが無い、自宅配信も可能というライブチャットのハードルの低さこそ信じられないくらい可愛い女の子が集まる理由でしょう！
 
 
-			
-			
+### プレミアム会員って必要？
 
 正直な話、私は長いことFC2LIVEを楽しんでいますが、プレミアム会員というのにはなったことがありません。
 その理由はプレミアム会員での大きな特典の一つとなっている「タイムシフト視聴」が使えるということなのですが基本的に可愛い子は「タイムシフト視聴」にはいません。
