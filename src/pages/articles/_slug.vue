@@ -27,4 +27,12 @@ export default {
 
 <style lang="scss" scoped>
 h1{ font-size: 1.1rem; }
+th{
+  font-size: .8rem;
+}
+tr{
+  td:first-child{
+    font-size: .8rem;
+  }
+}
 </style>
