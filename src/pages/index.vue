@@ -5,18 +5,7 @@
       そのためにおすすめの女の子が管理人の好みによってしまうことをご了承くださいませ。<br>
       また、閲覧している方から応援してほしいという女の子がいればFC2LIVE以外でも教えて頂けたらサイト掲載を検討させていただきますので、お気軽にご連絡ください。
     </section>
-    <section>
-      <div>
-        <div><h2>ライブチャット(LIVECHAT)の極意</h2></div>
-        <div>
-          <article class="item-list">
-            <nuxt-link to="">
-              <b-icon icon="star"></b-icon> FC2LIVEってどういうところ？
-            </nuxt-link>
-          </article>
-        </div>
-      </div>
-    </section>
+    <NewArticles></NewArticles>
     <section class="section memo">
       https://qiita.com/Ancient_Scapes/items/fe18bae043e4d35f1e39<br />
       https://live.fc2.com/publicApiList/<br />
@@ -59,7 +48,11 @@
 </template>
 
 <script>
+import NewArticles from '~/components/NewArticles'
 export default {
+  components: {
+    NewArticles
+  },
   fetch({ store }) {
     store.commit("resetMenu");
   }

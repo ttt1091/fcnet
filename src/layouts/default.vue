@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import Dexie from 'dexie'
 import Mainmenu from '~/components/Mainmenu'
 export default {
   components: {

@@ -6,6 +6,8 @@ updated_at: '2021-06-01 22:00:00'
 ---
 
 ```
+  import Dexie from 'dexie'
+
   mounted: function () {
     var db = new Dexie("FriendDatabase");
     db.version(1).stores({
