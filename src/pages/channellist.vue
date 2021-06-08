@@ -8,6 +8,7 @@
     </div>
 
     <div>
+      <button class="button" @click="reloadBtn">更新</button>
       <button class="button" @click="changeOrder">↑昇降変更↓</button>
     </div>
 
@@ -91,6 +92,11 @@
       changeOrder(){
         this.sortOrder = this.sortOrder > 0 ? -1 : 1;
       },
+      reloadBtn() {
+        if( confirm("更新は60秒に一度程度にしてくださいm(_ _ )m") ) {
+          location.reload()
+        } else {  }
+      }
     },
     fetch ({store}) {
       store.commit('resetMenu')
