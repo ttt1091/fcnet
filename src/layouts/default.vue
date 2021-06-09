@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{'is-mobile-menu-open-wrap': $store.state.isMenuActive}">
     <nav
       class="navbar header has-shadow is-success"
       role="navigation"
@@ -59,7 +59,7 @@ export default {
         },
       ],
     }
-  },
+  }
 }
 </script>
 
@@ -69,5 +69,9 @@ export default {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   flex-grow: 2;
+}
+.is-mobile-menu-open-wrap{
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

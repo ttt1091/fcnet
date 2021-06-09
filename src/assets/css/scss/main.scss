@@ -60,3 +60,53 @@ html,body{ margin: 0;padding: 0; }
 .list-thumb{
   width: 50px;
 }
+
+
+
+.ttl2{
+  font-size: 1.1rem;
+  padding: 0.4em 0.5em;
+  color: #494949;
+  background: #f4f4f4;
+  border-left: solid 5px #7db4e6;
+  border-bottom: solid 3px #d7d7d7;
+}
+
+.article-body{
+  margin: 8px;
+  h2,h3{
+    margin: 32px auto 16px auto;
+  }
+  h2{
+    font-size: 1.1rem;
+    padding: 0.4em 0.5em;
+    color: #494949;
+    background: #f4f4f4;
+    border-left: solid 5px #7db4e6;
+    border-bottom: solid 3px #d7d7d7;
+  }
+  h3{
+    position: relative;
+    border-top: solid 2px #80c8d1;
+    border-bottom: solid 2px #80c8d1;
+    background: #f4f4f4;
+    line-height: 1.4;
+    padding: 0.4em 0.5em;
+    margin: 2em 0 0.5em;
+  }
+  h3:after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+    font-weight: 900;
+    content: '\f0a7\ POINT';
+    background: #80c8d1;
+    color: #fff;
+    left: 0px;
+    bottom: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 7px 3px;
+    font-size: 0.7em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+}

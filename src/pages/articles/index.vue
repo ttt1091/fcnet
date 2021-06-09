@@ -1,7 +1,10 @@
 <template>
   <div>
     <article class="post-items" v-for="b in articles" :key="b.slug">
-      <nuxt-link :to="'/articles/'+ b.slug">{{b.title}} {{$dateTimeToJaDate(b.updated_at)}}</nuxt-link>
+      <nuxt-link :to="'/articles/'+ b.slug">
+        <div>{{b.title}}</div>
+        <div class="grs-box-right">{{$dateTimeToJaDate(b.updated_at)}}</div>
+      </nuxt-link>
     </article>
   </div>
 </template>
@@ -26,6 +29,10 @@ export default {
   border: solid 1px #ddd;
   a{
     display: block;
+    color: #444;
+  }
+  .grs-box-right{
+    font-size: .8rem;
   }
 }
 </style>

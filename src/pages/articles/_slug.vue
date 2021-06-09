@@ -37,7 +37,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1{ font-size: 1.1rem; }
+h1 {
+  margin: 8px;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0.5em;
+  background: #a6d3c8;
+  color: white;
+}
+h1::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
 th{ font-size: .8rem; }
 tr{
   td:first-child{
@@ -45,8 +61,4 @@ tr{
   }
 }
 
-.grs-box-right{ text-align: right; }
-.article-body{
-  margin: 8px;
-}
 </style>
