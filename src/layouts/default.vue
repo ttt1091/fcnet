@@ -31,7 +31,7 @@
       <div class="is-mobile-menu" :class="{'is-view': $store.state.isMenuActive}">
         <Mainmenu />
       </div>
-      <div @click="$store.commit('toggleMenu')"  :class="{'is-mobile-menu-opened': $store.state.isMenuActive}">close</div>
+      <div @click="$store.commit('toggleMenu')"  :class="{'is-mobile-menu-opened': $store.state.isMenuActive}"></div>
     </div>
 
     <div class="is-hidden-mobile is-hidden-tablet-only is-desktop-menu">

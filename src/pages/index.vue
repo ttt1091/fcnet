@@ -5,7 +5,7 @@
       そのためにおすすめの女の子が管理人の好みによってしまうことをご了承くださいませ。<br>
       また、閲覧している方から応援してほしいという女の子がいればFC2LIVE以外でも教えて頂けたらサイト掲載を検討させていただきますので、お気軽にご連絡ください。
     </section>
-    <NewArticles></NewArticles>
+    <NewArticles :responseData="responseData"></NewArticles>
     <section class="section memo">
       https://qiita.com/Ancient_Scapes/items/fe18bae043e4d35f1e39<br />
       https://live.fc2.com/publicApiList/<br />
@@ -52,6 +52,11 @@ import NewArticles from '~/components/NewArticles'
 export default {
   components: {
     NewArticles
+  },
+  async asyncData ({ $content, params }) {
+    const query = await $content('articles' || 'index', { deep: true }).limit(10).sortBy('updated_at', 'desc')
+    const articles = await query.fetch()
+    return { responseData: articles }
   },
   fetch({ store }) {
     store.commit("resetMenu");
