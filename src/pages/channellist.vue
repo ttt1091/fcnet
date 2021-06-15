@@ -41,13 +41,11 @@
         </div>
         <div>
           <div>
-            <!-- 
             <NuxtLink
               :to="'/girls/'+post.id"
             >
               配信者情報
             </NuxtLink>
-            -->
           </div>
         </div>
         <div class="grs-card-foot">

@@ -6,6 +6,7 @@
     {{ icon }}<br>
     {{ image }}<br>
     {{ channelid }}<br>
+    {{ fc2id }}<br>
   </div>
 </template>
 
@@ -26,7 +27,8 @@
         info: response.data.profile_data.info,
         icon: response.data.profile_data.icon,
         image: response.data.profile_data.image,
-        channelid: channelResponse.data.channel_data.channelid
+        channelid: channelResponse.data.channel_data.channelid,
+        fc2id: response.data.profile_datafc2id
       }
     },
     data(){
