@@ -1,5 +1,9 @@
 <template>
   <div>
+    <ul>
+      <li v-if="is_publish === 1">配信中</li>
+      <li v-else>配信休止中</li>
+    </ul>
     {{ name }}<br>
     {{ age }}<br>
     {{ info }}<br>
@@ -8,6 +12,7 @@
     {{ channelid }}<br>
     {{ fc2id }}<br>
     {{ $dateTimeToJaDate(start) }}<br>
+    {{ is_publish }}<br>
     <div>
       <div>
         <input type="text" :value="name" placeholder="name">
@@ -67,7 +72,8 @@
         channel_image: channelResponse.data.channel_data.image,
         channelid: channelResponse.data.channel_data.channelid,
         fc2id: profile.data.profile_datafc2id,
-        start: channelResponse.data.channel_data.start
+        start: channelResponse.data.channel_data.start,
+        is_publish: channelResponse.data.channel_data.is_publish
       }
     },
     data(){
