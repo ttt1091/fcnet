@@ -3,6 +3,7 @@
     <ul>
       <li v-if="is_publish === 1">配信中</li>
       <li v-else>配信休止中</li>
+      <li>{{ twitter | 'twitter登録無し' }}</li>
     </ul>
     {{ name }}<br>
     {{ age }}<br>
@@ -73,7 +74,8 @@
         channelid: channelResponse.data.channel_data.channelid,
         fc2id: profile.data.profile_datafc2id,
         start: channelResponse.data.channel_data.start,
-        is_publish: channelResponse.data.channel_data.is_publish
+        is_publish: channelResponse.data.channel_data.is_publish,
+        twitter: channelResponse.data.channel_data.tname
       }
     },
     data(){
