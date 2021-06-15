@@ -3,7 +3,7 @@
     <ul>
       <li v-if="is_publish === 1">配信中</li>
       <li v-else>配信休止中</li>
-      <li>{{ twitter | 'twitter登録無し' }}</li>
+      <li>{{ twitter || 'twitter登録無し' }}</li>
     </ul>
     {{ name }}<br>
     {{ age }}<br>
