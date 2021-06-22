@@ -16,7 +16,7 @@ if ($arr === NULL) {
         return;
 }else{
         $json_count = count($arr["channel"]);
-        $json_time = $arr["time"];
+        $json_time = date('Y/m/d H:i:s', $arr["time"]);
         $bc_id　= array();
         $bc_title = array();
         for($i=$json_count-1;$i>=0;$i--){
