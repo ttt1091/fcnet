@@ -30,3 +30,34 @@ https://www.facebook.com/people/%E3%81%82%E3%82%8A%E3%81%95-%E3%81%AE%E3%81%A0/1
 東京スカイツリー[ポケモンセンター]
 東京スカイツリー[キルフェボン]
 
+
+https://live.fc2.com/2_45338757?afid=
+
+mysql -u root -p 'a536d9756c3141a77ca58be66b38f9935c11a23b280dba62'
+	
+CREATE USER 'dadarion' IDENTIFIED BY 'o4681wae546sh1esrge3erg35wgawe3h35jrksrt6srgawe6';
+GRANT ALL ON *.* TO dadarion;
+
+
+
+fc2live
+
+channels
+
+id
+channel_id
+channel_title
+user_name
+channel_image
+channel_type
+channel_count
+channel_total
+channel_login
+channel_app
+channel_pay
+channel_amount	
+channel_interval
+channel_start
+channel_unix_start
+channel_view
+channel_rank
