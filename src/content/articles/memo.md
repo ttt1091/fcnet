@@ -39,6 +39,10 @@ CREATE USER 'dadarion' IDENTIFIED BY 'o4681wae546sh1esrge3erg35wgawe3h35jrksrt6s
 GRANT ALL ON *.* TO dadarion;
 
 
+<div>
+https://www.instagram.com/p/CG0CVGpJXpD/
+</div>
+
 
 fc2live
 
