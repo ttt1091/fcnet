@@ -66,3 +66,33 @@ channel_start
 channel_unix_start
 channel_view
 channel_rank
+
+
+
+
+[channel_view]
+0=ng
+1=ok
+
+[channel_rank]
+0=低評価
+1=未評価
+2=録画系高評価
+3=2ショット系高評価
+4=生放送系高評価
+5=
+6=
+7=
+8=
+9=生放送系最高評価
+
+
+
+```
+SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+Connection: opening to ssl://smtp.spmode.ne.jp:465, timeout=300, options=array()
+Connection failed. Error #2: stream_socket_client(): SSL: Handshake timed out [/var/apps/deli/cake/app/Console/Command/phpmailer/SMTP.php line 332]
+Connection failed. Error #2: stream_socket_client(): Failed to enable crypto [/var/apps/deli/cake/app/Console/Command/phpmailer/SMTP.php line 332]
+Connection failed. Error #2: stream_socket_client(): unable to connect to ssl://smtp.spmode.ne.jp:465 (Unknown error) [/var/apps/deli/cake/app/Console/Command/phpmailer/SMTP.php line 332]
+SMTP ERROR: Failed to connect to server: (0)
+```
