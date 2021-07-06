@@ -96,3 +96,6 @@ Connection failed. Error #2: stream_socket_client(): Failed to enable crypto [/v
 Connection failed. Error #2: stream_socket_client(): unable to connect to ssl://smtp.spmode.ne.jp:465 (Unknown error) [/var/apps/deli/cake/app/Console/Command/phpmailer/SMTP.php line 332]
 SMTP ERROR: Failed to connect to server: (0)
 ```
+
+
+HTML Living Standard
