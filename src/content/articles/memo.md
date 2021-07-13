@@ -69,6 +69,28 @@ channel_rank
 
 
 
+channel_id
+user_id
+party_id
+twoshot_id
+fc2_id
+twoshot
+title
+info
+image
+tname
+amount
+money_interval
+profile_name
+profile_info
+profile_image
+icon
+age
+channel_view
+channel_rank
+updated
+created
+
 
 [channel_view]
 0=ng
@@ -99,3 +121,34 @@ SMTP ERROR: Failed to connect to server: (0)
 
 
 HTML Living Standard
+
+
+
+```
+<input type="hidden" name="channel_id" value="<?= $channelid ?>">
+<input type="hidden" name="user_id" value="<?= $userid ?>">
+<input type="hidden" name="party_id" value="<?= $partyid ?>">
+<input type="hidden" name="twoshot_id" value="<?= $twoshotid ?>">
+<input type="hidden" name="fc2_id" value="<?= $fc2id ?>">
+<input type="hidden" name="twoshot" value="<?= $twoshot ?>">
+<input type="hidden" name="title" value="<?= $title ?>">
+<input type="hidden" name="info" value="<?= $info ?>">
+<input type="hidden" name="image" value="<?= $image ?>">
+<input type="hidden" name="tname" value="<?= $tname ?>">
+<input type="hidden" name="amount" value="<?= $amount ?>">
+<input type="hidden" name="money_interval" value="<?= $interval ?>">
+<input type="hidden" name="profile_name" value="<?= $profile_name ?>">
+<input type="hidden" name="profile_info" value="<?= $profile_info ?>">
+<input type="hidden" name="profile_image" value="<?= $profile_image ?>">
+<input type="hidden" name="icon" value="<?= $icon ?>">
+<input type="hidden" name="age" value="<?= $age ?>">
+<input type="hidden" name="channel_view" value="<?= $channel_view ?>">
+<input type="hidden" name="channel_rank" value="<?= $channel_rank ?>">
+<input type="hidden" name="rec" value="<?= $rec ?>">
+<input type="hidden" name="mosaic" value="<?= $mosaic ?>">
+<input type="hidden" name="sharedaccount" value="<?= $sharedaccount ?>">
+<input type="hidden" name="sharedaccountname" value="<?= $sharedaccountname ?>">
+<input type="hidden" name="liverating" value="<?= $liverating ?>">
+<input type="hidden" name="updated" value="<?= $updated ?>">
+<input type="hidden" name="created" value="<?= $created ?>">
+```
