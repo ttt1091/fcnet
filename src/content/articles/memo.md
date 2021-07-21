@@ -152,3 +152,27 @@ HTML Living Standard
 <input type="hidden" name="updated" value="<?= $updated ?>">
 <input type="hidden" name="created" value="<?= $created ?>">
 ```
+
+
+
+2021/07/16
+みの
+EX 15000
+トゥージュール 60分 2000
+
+性格◎
+
+
+2021/07/21
+みくり
+フリー割 30分 6000
+トゥージュール 45分 1500
+OP A 尻 1000
+OP 裏 パンティ素股 4000
+
+細身
+声アニメ系
+乳首茶色
+お椀型
+風呂に入らせ時間潰ししたい感じが半端ない
+人懐っこい感じはある
